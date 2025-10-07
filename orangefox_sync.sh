@@ -41,11 +41,11 @@ MIN_MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_ao
 
 # functions to set up things for each supported manifest branch
 do_fox_141() {
-	MIN_MANIFEST="https://github.com/nebrassy/platform_manifest_twrp_aosp.git";
+	MIN_MANIFEST="https://github.com/linastorvaldz/platform_manifest_twrp_aosp.git";
 	BASE_VER=14;
 	FOX_BRANCH="fox_14.1";
 	FOX_DEF_BRANCH="fox_14.1";
-	TWRP_BRANCH="twrp-14";
+	TWRP_BRANCH="twrp-14.1-nebrassy";
 	DEVICE_BRANCH="android-14";
 	test_build_device="vayu"; # the device whose tree we can clone for compiling a test build
 	[ -z "$MANIFEST_DIR" ] && MANIFEST_DIR="$BASE_DIR/$FOX_DEF_BRANCH";
