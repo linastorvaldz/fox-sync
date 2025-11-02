@@ -199,7 +199,7 @@ get_twrp_minimal_manifest() {
   echo "-- Done.";
 
   echo "-- Syncing the $TWRP_BRANCH minimal manifest repo ...";
-  repo sync;
+  repo sync -j4;
   [ "$?" != "0" ] && {
    abort "-- Failed to Sync the minimal manifest repo. Quitting.";
   }
